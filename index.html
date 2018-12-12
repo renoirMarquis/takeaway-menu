@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pizza parlour</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="description" content="this is a pizzaria takeaway who delivers in bolton ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="pizza takeaway, bolton foods, order burgers, meal deals, chips, calzone, garlic bread, kebab, kids meals">
+    <meta name="author" content="renoir marquis">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130187104-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130187104-1');
+
+    </script>
+
+</head>
+
+<body>
+    <header class="homePageHeader">
+        <nav>
+            <ul class="sidenav">
+              
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="sliderImage">
+            <img class="mySlides w3-animate-fading" src="images/slider11200.jpg">
+            <img class="mySlides w3-animate-fading" src="images/slider21200.jpg">
+            <img class="mySlides w3-animate-fading" src="images/slider1200.jpg">
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+       
+    </header>
+      
+        <p id="mainHeader"> Welcome to our Homepage</p>
+        
+    <section class="mainPageSection">
+        <p id="contentMainPage1">Welcome to the new website of Pizza Parlour, a popular takeaway in Bolton. The original Pizza Parlour was established in 1998, the new owner has over 15 years of experience. This is a family business and we really care about the quality.</p>
+
+        <p id="contentMainPage2">
+            Pizza Parlour on 839 Moss Bank Way, Bolton. It carries on the tradition by using only fresh products, pizza dough and herbs, all ingredients are bought and prepared daily. High quality for reasonable prices!</p>
+    </section>
+
+
+
+
+
+    <footer class=" footer">
+        Copyright &copy; 2018 Pizza Parlour, All right reserved</footer>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html>
